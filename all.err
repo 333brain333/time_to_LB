@@ -1,0 +1,6 @@
+all.for: *WRN* VA-05 in IGRF_SUB, OGNR is an unreferenced symbol
+all.for: *WRN* VA-05 in IGRF_SUB, AGNR is an unreferenced symbol
+all.for: *WRN* VA-05 in IGRF_SUB, EGNR is an unreferenced symbol
+all.for: *WRN* CM-04 in GEOMAG, COMMON block GEOPACK has been defined with a different size
+all.for: *WRN* VA-05 in FMAIN, VARE is an unreferenced symbol
+all.for: *WRN* VA-05 in FMAIN, VARB is an unreferenced symbol

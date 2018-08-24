@@ -1,0 +1,22 @@
+!define BLANK ""
+C:\Users\DmitriyViktorovich\Desktop\igrf\all.obj : C:\Users\DmitriyViktorovi&
+ch\Desktop\igrf\all.for .AUTODEPEND
+ @C:
+ cd C:\Users\DmitriyViktorovich\Desktop\igrf
+ wfc386 all.for -d2 -q -dep
+
+C:\Users\DmitriyViktorovich\Desktop\igrf\noname.exe : C:\Users\DmitriyViktor&
+ovich\Desktop\igrf\all.obj .AUTODEPEND
+ @C:
+ cd C:\Users\DmitriyViktorovich\Desktop\igrf
+ @%write noname.lk1 FIL all.obj
+ @%append noname.lk1 
+!ifneq BLANK ""
+ *wlib -q -n -b noname.imp 
+ @%append noname.lk1 LIBR noname.imp
+!endif
+!ifneq BLANK ""
+ @%append noname.lk1 
+!endif
+ *wlink name noname d all sys nt op m op maxe=25 op q op symf @noname.lk1
+
